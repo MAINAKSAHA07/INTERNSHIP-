@@ -1,0 +1,436 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #ffffff;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: -10;
+
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  width: 50px;
+ 
+  z-index: -10;
+}
+.footer-widget ul li {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color:#13BFAB;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #fff;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 12px;
+  color: #878787;
+}
+
+
+.heading-1 {
+    font-size: 2.9411764705882rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.heading-2{
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+}
+
+.IntroCourse{
+  background-image: url("/public/images/TLN-Crash-course-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.AdultEnglish{
+  background-image: url("/public/images/TLN-Adults-English-Banner-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.KidsEnglish{
+  background-image: url("/public/images/TLN-Kids-English-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.KidsFrench{
+  background-image: url("/public/images/TLN-Kids-French-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.KidsSpanish{
+  background-image: url("/public/images/TLN-Kids-Spanish-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.KidsGerman{
+  background-image: url("/public/images/TLN-Kids-German-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.KidsMandarin{
+  background-image: url("/public/images/TLN-Kids-Mandarin-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.KidsJapanese{
+  background-image: url("/public/images/TLN-Kids-Japanese-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.KidsKorean{
+  background-image: url("/public/images/TLN-Kids-Korean-Banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.accordion-button:not(.collapsed){
+  color: #13BFAB;
+}
+
+.menu-button{
+  z-index: 10;
+  position: fixed;
+  right: -55px;
+  bottom: 50vh;
+  width: 60px;
+  /* height: 300px; */
+}
+
+
+.social-menu ul{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-menu ul li{
+  list-style: none;
+  margin: 5px 15px;
+}
+
+.social-menu ul li .fab{
+  font-size: 25px;
+  line-height: 60px;
+  transition: .3s;
+  color: #000;
+}
+
+.social-menu ul li .fab{
+  color: #fff;
+  opacity: 1;
+}
+
+.social-menu ul li a{
+  opacity: 0.5;
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+
+
+.social-menu ul li:nth-child(1) a{
+  opacity: 0.7;
+  background-color: rgb(66 103 178);
+}
+.social-menu ul li:nth-child(2) a{
+  opacity: 0.7;
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a{
+  opacity: 0.7;
+  background-color:  #2867B2;
+}
+.social-menu ul li:nth-child(4) a{
+  opacity: 0.7;
+  background-color: #5a5a5a;
+}
+.social-menu ul li:nth-child(5) a{
+  opacity: 0.7;
+  background-color: #c8232c;
+}
+.social-menu ul li:nth-child(6) a{
+  opacity: 0.7;
+  background-color:  #c4302b;
+}
+
+
+
+.social-menu ul li:nth-child(1) a:hover{
+  opacity: 1;
+  background-color: rgb(66 103 178);
+}
+.social-menu ul li:nth-child(2) a:hover{
+  opacity: 1;
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  opacity: 1;
+  background-color:  #2867B2;
+}
+.social-menu ul li:nth-child(4) a:hover{
+  opacity: 1;
+  background-color: #5a5a5a;
+}
+.social-menu ul li:nth-child(5) a:hover{
+  opacity: 1;
+  background-color: #c8232c;
+}
+.social-menu ul li:nth-child(6) a:hover{
+  opacity: 1;
+  background-color:  #c4302b;
+}
+/* .call{
+  margin-left: auto;
+  display: none;
+  background-color: #13BFAB;
+  width: 22rem;
+  height: 2rem;
+  border-radius: 3rem;
+  color:white;
+  text-align: center;
+  z-index: 1000; 
+
+
+
+}
+.rin{
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  bottom: 1rem;
+  width: auto;
+  display: flex none;
+  width: 20rem;
+  height: 2rem;
+  font-size:1rem;
+  z-index: 100;
+
+}
+.rin:hover .call{
+  display: block;
+  transition-timing-function: ease-in;
+} */
+.rin{
+  border-radius: 100%;
+  border-style: bold;
+  background-image: linear-gradient(to right,#58D69D ,#13bfab);
+  color: white;
+  
+}
+.call{
+  font-size: 30px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex ;
+  margin-left:1rem ;
+  height: 3rem;
+  z-index: 100;
+  
+}
+.heartless{
+  border-radius: 3rem;
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  background-color:#7771BB;
+  display: none;
+  width: 20rem;
+  height: 3rem;
+  font-size:1.1rem;
+  padding-top: 2.7%;
+ 
+}
+.call:hover .heartless{
+  display: block;
+}
+.call:hover .rin{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#help{
+  background-color:#F4F8FB;
+ 
+}
+
+@media (max-width: 500px) {
+  .call{
+    font-size: 16px;
+}
+}

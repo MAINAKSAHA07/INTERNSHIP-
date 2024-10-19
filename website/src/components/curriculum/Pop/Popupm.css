@@ -1,0 +1,97 @@
+
+.btn-val {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.modal-body {
+
+    background-color: #72EDD9;
+    padding-top: 38%;
+    padding-bottom: 40%;
+    margin-bottom: 30%;
+    border-radius: 0rem 0rem 1rem 1rem;
+  
+}
+
+  
+.gs {
+    background-color:#5FE0BB;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+    border-radius: 12px;
+    width: 312px;
+    height: 53.68px;
+    left: 116px;
+    top: 433.95px;
+    color: aliceblue;
+   
+
+}
+.snow{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-bottom: 10%;
+    border-radius: 2rem 2rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#laptop{
+    position: absolute;
+    left: 16%;
+    top:15%;
+    
+    width: 70%;
+    z-index: 3;
+}
+
+
+/* line  divider */
+#e1{
+    position: absolute;
+    left:0;
+    top:0;
+}
+#e2{
+    position: absolute;
+    right: 0;
+    top: 40%;
+}
+#linec{
+    position: absolute;
+    display: block;
+    left: 30%;
+    top:50%;
+    z-index: 3;
+    margin-top: 0%;
+
+
+}
+.close{
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    z-index: 5;
+
+}
+#title{
+    position: absolute;
+    left: 8%;
+    top:80%;
+    z-index: 4;
+}
+@media (max-width: 500px) {
+    #linec{
+      display: none;
+  }
+  .modal-body{
+    margin-bottom: 60%;
+  }
+ 
+
+  }

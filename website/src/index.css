@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  /* font-weight: 600; */
+}
+
+body {
+  background-color: #ffff;
+  color: #000000;
+  /* font-family: "Poppins", Sans-serif; */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+@media only screen and(min-width: 768){
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  body {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 479px){
+  body {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.curr-container-1-img{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 60%;
+}
+
+    .curr-container-1-img > img {
+        width: 70%;
+}
+
+.fadeIN {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0%   { opacity:0; }
+    
+    100% { opacity:1; }
+}
+
+.buttons{
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    /* padding: 0; */
+    display:block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+#btnP{
+    color: #13bfab;
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 768px){
+    .table-cells{
+        width: 50%;    
+    }
+    .table-head{
+        width: 100%;
+        justify-content: center;
+    }
+    .cells-visb{
+        display: block;
+    }
+    .unwanted{
+        display: none;
+    }
+}
+
+.bgimg{
+    background-image: url("/public//images/Adolscents\ bg_1@300x.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.bgimg-2{
+    background-image: url("/public//images/Adolscents\ bg_1@300x.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.infosec{
+    background-image: url('/public//images//sof__3bg2.png');
+}
+
+.partial-underline::after {
+    content: "";
+    display: block;
+    width: 20%;
+    padding-top: 10px;
+    border-bottom: 3px solid #f2b919;
+  }
+
+  .partial-underline-right::after {
+    content: "";
+    float: right;
+    display: block;
+    width: 30%;
+    padding-top: 10px;
+    border-bottom: 3px solid #f2b919;
+  }
