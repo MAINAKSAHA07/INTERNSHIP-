@@ -1,7 +1,105 @@
-The Website created is for a startup THELANGUAGENETWORK.CO
+# THELANGUAGENETWORK.CO Project
 
+This repository contains the full-stack codebase for THELANGUAGENETWORK.CO, including both the frontend (React) and backend (Node.js/Express + Firebase Functions) components.
 
-# Getting Started with Create React App
+---
+
+## Folder Structure
+
+- `website/` — React frontend (main user-facing website)
+- `Backend/` — Node.js/Express backend and Firebase Cloud Functions
+
+---
+
+## Setup Instructions
+
+### Frontend (`website/`)
+
+1. Navigate to the website folder:
+   ```sh
+   cd website
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+   The app will run at [http://localhost:3000](http://localhost:3000).
+
+### Backend (`Backend/`)
+
+1. Navigate to the Backend folder:
+   ```sh
+   cd Backend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the backend server:
+   ```sh
+   npm start
+   ```
+   The backend will run at [http://localhost:8080](http://localhost:8080).
+
+#### Firebase Functions
+
+- Navigate to `Backend/functions/` and follow Firebase CLI instructions to deploy or emulate functions.
+
+---
+
+## Security & Code Quality Audit (2024)
+
+### Key Findings
+- **Sensitive Data:** MongoDB credentials and tokens are hardcoded in source files. **Move all secrets to environment variables (e.g., using `.env` files and `dotenv`).**
+- **Frontend:** No ESLint/Prettier config detected. Add these for consistent code style.
+- **Backend:** ESLint is present but with relaxed rules. Consider enforcing stricter linting.
+- **Potential XSS:** Usage of `dangerouslySetInnerHTML` and `.innerHTML` in frontend. Always sanitize user content (DOMPurify is used, but review all usages).
+- **Dependencies:** Large number of dependencies; some may be unused. Run `depcheck` or similar tools to prune unused packages.
+- **Error Handling:** Some API calls lack robust error handling.
+
+### Recommendations
+- **Environment Variables:** Store all secrets (DB URIs, API keys, tokens) in environment variables.
+- **Add Linting:** Add ESLint and Prettier to the frontend. Enforce code style in both frontend and backend.
+- **Audit Dependencies:** Regularly run `npm audit` and `depcheck` to find vulnerabilities and unused packages.
+- **Sanitize HTML:** Continue using DOMPurify and review all dynamic HTML rendering for security.
+- **Remove Dead Code:** Clean up commented-out and duplicate code.
+
+---
+
+## Scripts & Usage
+
+### Frontend (`website/`)
+- `npm start` — Start development server
+- `npm test` — Run tests
+- `npm run build` — Build for production
+- `npm run eject` — Eject configuration (irreversible)
+
+### Backend (`Backend/`)
+- `npm start` — Start backend server (with nodemon)
+
+### Firebase Functions (`Backend/functions/`)
+- `npm run lint` — Lint functions code
+- `npm run serve` — Emulate functions locally
+- `npm run deploy` — Deploy functions to Firebase
+
+---
+
+## Contribution & Best Practices
+- **Never commit secrets or credentials.**
+- Use environment variables for all sensitive data.
+- Add and enforce ESLint/Prettier for code consistency.
+- Write robust error handling for all API calls.
+- Regularly audit dependencies and code for security and quality.
+
+---
+
+## Frontend (website/) — Create React App Info
+
+_The following is the default Create React App documentation for the frontend:_
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -42,32 +140,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
